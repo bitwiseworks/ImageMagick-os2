@@ -83,6 +83,9 @@
 #include <netdb.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
+#if defined(__OS2__)
+#include <libcx/net.h>
+#endif 
 #define CLOSE_SOCKET(socket) (void) close_utf8(socket)
 #define HANDLER_RETURN_TYPE void *
 #define HANDLER_RETURN_VALUE (void *) NULL
