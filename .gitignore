@@ -98,3 +98,21 @@
 .libs
 Makefile
 Makefile.PL
+
+# ignore generated files
+Makefile.in
+aclocal.m4
+config/ar-lib
+config/compile
+config/config.guess
+config/config.sub
+config/depcomp
+config/install-sh
+config/ltmain.sh
+config/missing
+config/mkinstalldirs
+config/tap-driver.sh
+config/test-driver
+configure
+m4/libtool.m4
+m4/ltversion.m4
