@@ -17,6 +17,10 @@
 #  Top-Level Makefile for building ImageMagick.
 #
 
+VENDOR ?=community
+BUILD_INFO=\#\#1\#\# $(shell date +'%d %b %Y %H:%M:%S')     $(shell uname -n)
+BUILDLEVEL_INFO=@\#$(VENDOR):$(MAGICK_VERSION)\#@$(BUILD_INFO)::::$(MAGICK_MICRO_VERSION)::
+
 topincludedir = @includedir@/MagickCore
 
 AM_CPPFLAGS = -I$(top_builddir) -I$(top_srcdir)
